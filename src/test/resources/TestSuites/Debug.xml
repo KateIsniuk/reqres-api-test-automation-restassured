@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Debug" verbose="1">
+
+    <test name="ExceptionTestsTest">
+        <parameter name="browser" value="chrome">
+        </parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.ExceptionTests">
+                <methods>
+                    <include name="noSuchElementException">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ElementNotInteractableException">
+        <parameter name="browser" value="chrome">
+        </parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.ExceptionTests">
+                <methods>
+                    <include name="elementNotInteractableException">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="InvalidElementStateException">
+        <parameter name="browser" value="chrome">
+        </parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.ExceptionTests">
+                <methods>
+                    <include name="invalidElementStateException">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<test name="StaleElementReferenceExceptionTest">
+<parameter name="browser" value="chrome">
+</parameter>
+<classes>
+    <class name="com.herokuapp.theinternet.ExceptionTests">
+        <methods>
+            <include name="staleElementReferenceException">
+            </include>
+        </methods>
+    </class>
+</classes>
+</test>
+<test name="ExceptionTimeOutException">
+<parameter name="browser" value="chrome">
+</parameter>
+<classes>
+    <class name="com.herokuapp.theinternet.ExceptionTests">
+        <methods>
+            <include name="timeoutException">
+            </include>
+        </methods>
+    </class>
+</classes>
+</test>
+
+</suite>
+

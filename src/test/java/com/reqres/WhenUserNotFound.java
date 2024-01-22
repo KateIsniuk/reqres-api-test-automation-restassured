@@ -1,8 +1,10 @@
 package com.reqres;
 
+import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.IsEqual.equalTo;
 
 public class WhenUserNotFound {
    

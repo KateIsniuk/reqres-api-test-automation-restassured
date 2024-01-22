@@ -1,6 +1,5 @@
 package com.reqres;
 
-import com.reqres.User;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
