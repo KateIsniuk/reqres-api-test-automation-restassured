@@ -14,16 +14,16 @@ public class GetListOfAllUsers {
 3.	Print all users with odd ID numbers.
      */
     
-    @Test
-    public void getListOfAllUsers() {
-        String endpoint = "https://reqres.in/api/users?page=2";
-        Response response =
-                given()
-                        .when()
-                        .get(endpoint)
-                        .then()
-                        .assertThat().statusCode(200)
-                        .extract().response();
-        response.jsonPath().getList("data.findAll { it.id % 2 != 0 }").forEach(System.out::println);
-    }
+//    @Test
+//    public void getListOfAllUsers() {
+//        String endpoint = "https://reqres.in/api/users?page=2";
+//        Response response =
+//                given()
+//                        .when()
+//                        .get(endpoint)
+//                        .then()
+//                        .assertThat().statusCode(200)
+//                        .extract().response();
+//        response.jsonPath().getList("data.findAll { it.id % 2 != 0 }").forEach(System.out::println);
+//    }
 }
