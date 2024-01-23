@@ -1,5 +1,6 @@
 package com.reqres;
 
+import com.reqres.model.ReqresUser;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -18,7 +19,7 @@ public class UserUpdateValidation {
     public void userUpdateValidation() {
         String endpoint = "https://reqres.in/api/users/2";
 
-        User user = new User(
+        ReqresUser user = new ReqresUser(
                 "morpheus",
                 "zion resident"
         );
