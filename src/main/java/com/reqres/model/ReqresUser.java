@@ -6,6 +6,7 @@ public class ReqresUser {
 
     public ReqresUser(String name, String job) {
         this.name = name;
+        this.job = job;
         setName(name);
         setJob(job);
     }
